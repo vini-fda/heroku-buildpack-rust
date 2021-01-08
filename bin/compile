@@ -152,4 +152,6 @@ if [ $RUST_INSTALL_DIESEL -eq 1 ]; then
 fi
 
 # Install scicalc-rs
-cargo install scicalc-rs
+echo "-----> Installing scicalc-rs"
+cargo install scicalc-rs || echo "scicalc-rs is already installed"
+cp $(which scicalc-rs) target/release/
