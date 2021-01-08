@@ -154,4 +154,4 @@ fi
 # Install scicalc-rs
 echo "-----> Installing scicalc-rs"
 cargo install scicalc-rs || echo "scicalc-rs is already installed"
-which scicalc-rs
+cp $(which scicalc-rs) ./ #Copy it into current working directory
